@@ -1,0 +1,11 @@
+{
+  "name": "mcp-audit",
+  "private": true,
+  "version": "0.1.0",
+  "description": "MCP server + CLI for Node dependency security audit",
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "npm run build -w audit-core && npm run build -w mcp-audit-server"
+  }
+}
