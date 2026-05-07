@@ -11,7 +11,7 @@
 ## 克隆与安装
 
 ```bash
-git clone https://github.com/<你的用户名>/mcp-audit.git
+git clone https://github.com/damen-tao/mcp-audit.git
 cd mcp-audit
 npm install
 ```
