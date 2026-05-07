@@ -1,4 +1,4 @@
-# MCP 依赖安全审计
+﻿# MCP 依赖安全审计
 
 基于 [Model Context Protocol](https://modelcontextprotocol.io/)，在 **Cursor** 等客户端中审计本地或远程 **Node 项目** 的依赖漏洞，并输出统一 **Markdown** 报告。支持 **npm / pnpm / yarn**（含自动探测）。
 
@@ -16,7 +16,7 @@ cd mcp-audit
 npm install
 ```
 
-安装完成后请 **编译一次**：
+安装完成后请执行一次构建：
 
 ```bash
 npm run build
@@ -25,7 +25,7 @@ npm run build
 ## 在 Cursor 里配置 MCP
 
 1. 将本仓库克隆到本机任意路径（记下 **`mcp-server` 里 `dist/index.js` 的绝对路径**）。
-2. 在你常用项目的 **`.cursor/mcp.json`**（或 Cursor **Settings → MCP**）中加入：
+2. 在你常用项目的 **`.cursor/mcp.json`**（或 Cursor **Settings -> MCP**）中加入：
 
 ```json
 {
@@ -57,7 +57,7 @@ npm run build
 | `timeoutMs` | 否 | 毫秒，默认 60000 |
 | `locale` | 否 | `zh` \| `en`，报告模板语言（默认 zh） |
 
-**示例（本地项目 + 中文报告 + 保存到桌面）：**
+示例（本地项目 + 中文报告 + 保存到桌面）：
 
 ```json
 {
@@ -95,7 +95,7 @@ node packages/audit-core/dist/cli.js "https://github.com/org/repo.git" --ref mai
 
 ## 许可证
 
-请在本仓库根目录自行添加 `LICENSE`（若开源）。
+本项目采用 [MIT License](./LICENSE)。
 
 ## 常见问题
 
